@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { useCreateTeamMemberMutation, useDeleteTeamMemberMutation, useGetAllTeamMemberQuery, useUpdateTeamMemberMutation } from '../../../../../redux/features/teamMembers'
+import { useCreateTeamMemberMutation, useDeleteTeamMemberMutation, useGetAllTeamMemberQuery, useUpdateTeamMemberMutation } from '../../../../../redux/features/TeamMembers'
 import TeamMemModel from '@/component/TeamMemModel'
 import { toast } from 'react-toastify'
 

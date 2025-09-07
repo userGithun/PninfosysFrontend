@@ -5,8 +5,7 @@ import { BsEmojiSmile } from 'react-icons/bs';
 import Link from 'next/link';
 import TechnoHome from '@/component/TechnoHome';
 import Image from 'next/image';
-// import { useGetAllTeamMemberQuery } from '../../../redux/features/teamMembers';
-import { useGetAllTeamMemberQuery } from '/redux/features/teamMembers'
+import { useGetAllTeamMemberQuery } from '../../../redux/features/TeamMembers';
 import Banner from '@/component/Banner';
 import img1 from '/public/image/about/box1.png';
 import img2 from '/public/image/about/box2.png';
