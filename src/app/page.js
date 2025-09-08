@@ -198,24 +198,23 @@ export default function Home() {
       <PortfolioHome />
       {/* Portfolio End */}
 
-
       {/* Service Start */}
-      <section className="bg-[#009df2] text-white py-12 px-4 mb-16">
-        <h2 className="text-6xl text-center font-bold mt-16 mb-16">Our Services</h2>
+      <section className="bg-[#009df2] text-white py-12 px-4 mb-16 overflow-x-hidden">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl text-center font-bold mt-16 mb-16">Our Services</h2>
 
-        <div className="container mx-auto flex flex-col md:flex-row items-center gap-10 md:w-[70%] mb-24">
+        <div className="container mx-auto flex flex-col md:flex-row items-start gap-8 md:gap-10 w-full md:w-[73%] mb-24">
 
           {/* Left Side */}
-          <div className="flex-1 space-y-6 pl-6">
+          <div className="flex-1 space-y-6">
 
             {/* Box 1 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-52 h-15 sm:w-32 sm:h-17 md:w-58 md:h-16 lg:w-36 lg:h-16 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fas fa-lightbulb text-xl sm:text-2xl md:text-3xl lg:text-3xl"></i>
+              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fas fa-lightbulb"></i>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">INNOVATIVE Ideas</h3>
-                <p className="text-sm text-white md:leading-6">
+                <p className="text-sm sm:text-md leading-5 sm:leading-6">
                   PN INFOSYS believes in developing true partnerships. We foster a collegial environment where individual perspectives are respected and honest dialogue is expected.
                 </p>
               </div>
@@ -223,13 +222,12 @@ export default function Home() {
 
             {/* Box 2 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-65 h-15 sm:w-32 sm:h-17 md:w-58 md:h-16 lg:w-46 lg:h-16 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fa fa-server text-xl sm:text-2xl md:text-3xl lg:text-3xl"></i>
+              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fa fa-server"></i>
               </div>
-
               <div>
                 <h3 className="font-bold text-xl mb-2">CREATIVE Designing</h3>
-                <p className="text-sm text-white md:leading-6">
+                <p className="text-sm sm:text-md leading-5 sm:leading-6">
                   PN INFOSYS brings robust skills and forward looking perspectives to solve customer challenges. We use proven knowledge to make recommendations and provide expert guidance to our customers.
                 </p>
               </div>
@@ -237,12 +235,12 @@ export default function Home() {
 
             {/* Box 3 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-52 h-15 sm:w-32 sm:h-17 md:w-58 md:h-16 lg:w-36 lg:h-16 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fas fa-users text-xl sm:text-2xl md:text-3xl lg:text-3xl"></i>
+              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fas fa-users"></i>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">CLIENT'S Happiness</h3>
-                <p className="text-sm text-white md:leading-6">
+                <p className="text-sm sm:text-md leading-5 sm:leading-6">
                   PN INFOSYS is driven to meet client needs with determination and grit. We embrace tough challenges and do not rest until the problem is solved, the right way.
                 </p>
               </div>
@@ -250,12 +248,12 @@ export default function Home() {
 
             {/* Box 4 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-52 h-15 sm:w-32 sm:h-17 md:w-58 md:h-16 lg:w-36 lg:h-16 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fa fa-tasks text-xl sm:text-2xl md:text-3xl lg:text-3xl"></i>
+              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fa fa-tasks"></i>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">FULL Maintenance</h3>
-                <p className="text-sm text-white md:leading-6">
+                <p className="text-sm sm:text-md leading-5 sm:leading-6">
                   PN INFOSYS Company provides a full range of maintenance and compliance services for Government and Commercial facilities both large and small.
                 </p>
               </div>
@@ -263,12 +261,12 @@ export default function Home() {
 
             {/* Box 5 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-44 h-15 sm:w-32 sm:h-17 md:w-58 md:h-16 lg:w-30 lg:h-16 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fas fa-chalkboard-teacher text-xl sm:text-2xl md:text-3xl lg:text-3xl"></i>
+              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fas fa-chalkboard-teacher"></i>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">PRACTICAL Training</h3>
-                <p className="text-sm text-white md:leading-6">
+                <p className="text-sm sm:text-md leading-5 sm:leading-6">
                   We don't use paper and pencil at all in our training sessions. We are provided only practical work at training class session.
                 </p>
               </div>
@@ -277,7 +275,7 @@ export default function Home() {
           </div>
 
           {/* Right Side Image */}
-          < motion.div className="flex-1 flex justify-center"
+          <motion.div className="flex-1 flex justify-center mt-10 md:mt-0"
             animate={{ y: [0, -20, 0] }}
             transition={{ duration: 3, repeat: Infinity }}
           >
@@ -291,6 +289,7 @@ export default function Home() {
         </div>
       </section>
       {/* Service End */}
+
 
 
       {/* Event Start */}
