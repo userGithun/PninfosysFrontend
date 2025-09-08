@@ -3,64 +3,65 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useGetAllSlidersQuery } from "../../redux/features/sliders/sliderApi";
+import heroBanner from '/public/image/home/pnbanner.png';
 
 export default function HeroSlider() {
-    const { data: slides = [], isLoading, isError } = useGetAllSlidersQuery();
-    console.log(slides)
-    const [index, setIndex] = useState(0);
+    // const { data: slides = [], isLoading, isError } = useGetAllSlidersQuery();
+    // console.log(slides)
+    // const [index, setIndex] = useState(0);
 
-    useEffect(() => {
-        if (slides.length > 0) {
-            const interval = setInterval(() => {
-                setIndex((prev) => (prev + 1) % slides.length);
-            }, 5000);
-            return () => clearInterval(interval);
-        }
-    }, [slides]);
+    // useEffect(() => {
+    //     if (slides.length > 0) {
+    //         const interval = setInterval(() => {
+    //             setIndex((prev) => (prev + 1) % slides.length);
+    //         }, 5000);
+    //         return () => clearInterval(interval);
+    //     }
+    // }, [slides]);
 
-    if (isLoading) {
-        return (
-            <div className="h-[250px] sm:h-[450px] md:h-[600px] flex items-center justify-center bg-gray-100">
-                <p className="text-gray-600 text-sm">Loading slides...</p>
-            </div>
-        );
-    }
+    // if (isLoading) {
+    //     return (
+    //         <div className="h-[250px] sm:h-[450px] md:h-[600px] flex items-center justify-center bg-gray-100">
+    //             <p className="text-gray-600 text-sm">Loading slides...</p>
+    //         </div>
+    //     );
+    // }
 
-    if (isError || slides.length === 0) {
-        return (
-            <div className="h-[250px] sm:h-[450px] md:h-[600px] flex items-center justify-center bg-red-100">
-                <p className="text-red-600 text-sm">Failed to load slides.</p>
-            </div>
-        );
-    }
+    // if (isError || slides.length === 0) {
+    //     return (
+    //         <div className="h-[250px] sm:h-[450px] md:h-[600px] flex items-center justify-center bg-red-100">
+    //             <p className="text-red-600 text-sm">Failed to load slides.</p>
+    //         </div>
+    //     );
+    // }
 
-    const { title, subtitle, image } = slides[index];
+    // const { title, subtitle, image } = slides[index];
 
     return (
         <div className="relative w-full h-[500px] sm:h-[450px] md:h-[900px] overflow-hidden">
             {/* Background Image */}
-            {image && (
+            <div className="">
                 <Image
-                    src={image.url}
-                    alt={title}
+                    src={heroBanner.src}
+                    alt="PnBanner"
                     fill
-                    className="object-cover object-center transition-all duration-1000"
                     priority
+                    className="object-cover object-center"
                 />
-            )}
+            </div>
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/35 z-0" />
 
             {/* Text Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
-                <h4 className="text-md md:text-xl sm:text-sm text-blue-200 font-semibold tracking-wide uppercase mb-1">
+                <h4 className="text-xs md:text-xl sm:text-sm text-blue-200 font-semibold tracking-wide uppercase mb-1">
                     WHAT ARE YOU WAITING FOR?
                 </h4>
                 <h1 className="text-3xl sm:text-3xl md:text-6xl font-bold text-white leading-snug">
-                    {title}
+                    Our PN Infosys
                 </h1>
-                <p className="text-4xl md:text-7xl font-medium sm:text-lg text-white mt-2 mb-4">{subtitle}</p>
+                <p className="text-2xl md:text-7xl font-medium sm:text-lg text-white mt-2 mb-4">We're ready to help you grow!.</p>
 
                 {/* <Link
                     href="/apply"

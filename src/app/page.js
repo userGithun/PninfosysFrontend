@@ -206,7 +206,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-10 md:w-[70%] mb-24">
 
           {/* Left Side */}
-          <div className="flex-1 space-y-6">
+          <div className="flex-1 space-y-6 pl-6">
 
             {/* Box 1 */}
             <div className="flex items-start gap-4">
@@ -215,7 +215,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">INNOVATIVE Ideas</h3>
-                <p className="text-md text-white leading-6">
+                <p className="text-sm text-white leading-6">
                   PN INFOSYS believes in developing true partnerships. We foster a collegial environment where individual perspectives are respected and honest dialogue is expected.
                 </p>
               </div>
@@ -229,7 +229,7 @@ export default function Home() {
 
               <div>
                 <h3 className="font-bold text-xl mb-2">CREATIVE Designing</h3>
-                <p className="text-md text-white leading-6">
+                <p className="text-sm text-white leading-6">
                   PN INFOSYS brings robust skills and forward looking perspectives to solve customer challenges. We use proven knowledge to make recommendations and provide expert guidance to our customers.
                 </p>
               </div>
@@ -242,7 +242,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">CLIENT'S Happiness</h3>
-                <p className="text-md text-white leading-6">
+                <p className="text-sm text-white leading-6">
                   PN INFOSYS is driven to meet client needs with determination and grit. We embrace tough challenges and do not rest until the problem is solved, the right way.
                 </p>
               </div>
@@ -255,7 +255,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">FULL Maintenance</h3>
-                <p className="text-md text-white leading-6">
+                <p className="text-sm text-white leading-6">
                   PN INFOSYS Company provides a full range of maintenance and compliance services for Government and Commercial facilities both large and small.
                 </p>
               </div>
@@ -268,7 +268,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">PRACTICAL Training</h3>
-                <p className="text-md text-white leading-6">
+                <p className="text-sm text-white leading-6">
                   We don't use paper and pencil at all in our training sessions. We are provided only practical work at training class session.
                 </p>
               </div>

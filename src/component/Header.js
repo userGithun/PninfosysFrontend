@@ -100,7 +100,7 @@ function Header() {
 
           <Link href="/contact" onClick={closeMenu}>CONTACT</Link>
           <Link
-            href="/internship"
+            href="/internship" onClick={closeMenu}
             className="border border-blue-400 text-gray-800 px-3 py-1 rounded hover:bg-blue-50"
           >
             INTERNSHIP
@@ -133,7 +133,6 @@ function Header() {
           <Link href='/about' className='block' onClick={closeMenu}>ABOUT</Link>
           <Link href="/servicess" className='block' onClick={closeMenu}>SERVICE</Link>
           <Link href="/training" className='block' onClick={closeMenu}>TRAINING</Link>
-          <Link href="/course" className='block' onClick={closeMenu}>COURSE</Link>
 
           {/* WORKSHOP */}
           <div>
@@ -186,7 +185,7 @@ function Header() {
 
           <Link href="/contact" className="block" onClick={closeMenu}>CONTACT</Link>
           <Link
-            href="/internship"
+            href="/internship" onClick={closeMenu}
             className="inline-block border text-gray-900 border-blue-400 px-3 py-1 rounded mt-2"
           >
             INTERNSHIP
