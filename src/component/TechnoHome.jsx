@@ -12,7 +12,7 @@ export default function TechnoHome() {
 
     return (
         <section className="py-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto sm:px-6 md:px-12 lg:px-56 xl:px-32 2xl:px-20">
                 {/* Heading + Filters */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-6">
                     <div>

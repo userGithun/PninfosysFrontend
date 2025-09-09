@@ -8,7 +8,7 @@ export default function PortfolioHome() {
 
     return (
         <div>
-            <section className='px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-80 mb-20 mt-12'>
+            <section className='px-4 sm:px-6 md:px-12 lg:px-56 xl:px-32 2xl:px-60 mb-20 mt-12'>
                 <div className="py-12">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mb-8 sm:mb-10">
                         Our <br />

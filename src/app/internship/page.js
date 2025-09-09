@@ -30,10 +30,10 @@ export default function Courses() {
                     viewport={{ once: true }}
                     className="text-center mb-20"
                 >
-                    <h2 className="text-4xl font-bold bg-gradient-to-r text-sky-400 bg-clip-text">
+                    <h2 className=" text-3xl lg:text-4xl font-bold bg-gradient-to-r text-sky-400 bg-clip-text">
                         PN Infosys Courses – <span className="text-white/85">Crafted for Success</span>
                     </h2>
-                    <p className="text-gray-400 mt-4 font-medium text-lg">
+                    <p className="text-gray-400 mt-4 font-medium text-sm lg:text-lg">
                         Transform your knowledge into a career
                     </p>
                 </motion.div>

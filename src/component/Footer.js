@@ -9,7 +9,7 @@ const Footer = () => {
 
           {/* About */}
           <div>
-            <h1 className="text-5xl font-bold mb-4">
+            <h1 className="text-6xl md:text-5xl font-bold mb-4">
               <span className="text-blue-300">PN</span><span className="text-black">INFO</span><span className="text-blue-400">SYS</span>
             </h1>
             <p className="text-sm text-justify">

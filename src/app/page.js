@@ -23,7 +23,7 @@ export default function Home() {
       {/* BANNER End */}
 
       {/* Box Start */}
-      <section className='mt-14 mb-15 px-4 md:px-16'>
+      <section className='mt-14 mb-15 px-4 md:px-5'>
         <h2 className='text-2xl text-center text-gray-600 mb-7'>
           PN INFOSYS is a leading global business consulting and IT service company, Whether you need to run your business more efficiently or accelerate revenue growth, PN INFOSYS can get you there.
         </h2>
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
 
           {/* 2 */}
-          <div className='bg-white shadow-[#00000024] shadow-md w-[366px] rounded-xl mb-4 group'>
+          <div className='bg-white shadow-[#00000024] shadow-md w-[341px] rounded-xl mb-4 group'>
             <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] shadow-md place-items-center w-34 h-31 mx-auto grid  transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-xl group-hover:shadow-blue-500'>
               <img
                 src={img2.src}
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
 
           {/* 3 */}
-          <div className='bg-white shadow-[#00000024] shadow-md w-[366px] rounded-xl mb-4 group'>
+          <div className='bg-white shadow-[#00000024] shadow-md w-[341px] rounded-xl mb-4 group'>
             <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] shadow-md place-items-center w-34 h-31 mx-auto grid  transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-xl group-hover:shadow-blue-500'>
               <img
                 src={img3.src}
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
 
           {/* 4 */}
-          <div className='bg-white shadow-[#00000024] shadow-md w-[366px] rounded-xl mb-4 group'>
+          <div className='bg-white shadow-[#00000024] shadow-md w-[341px] rounded-xl mb-4 group'>
             <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] shadow-md place-items-center w-34 h-31 mx-auto grid transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-xl group-hover:shadow-blue-500'>
               <img
                 src={img4.src}
@@ -209,8 +209,8 @@ export default function Home() {
 
             {/* Box 1 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fas fa-lightbulb"></i>
+              <div className="bg-white text-red-600 rounded-full w-24 h-8 sm:w-20 sm:h-11 md:w-48 md:h-12 lg:w-40 lg:h-20 2xl:w-24 2xl:h-12  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fas fa-lightbulb text-sm md:text-2xl"></i>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">INNOVATIVE Ideas</h3>
@@ -222,8 +222,8 @@ export default function Home() {
 
             {/* Box 2 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fa fa-server"></i>
+              <div className="bg-white text-red-600 rounded-full w-24 h-8 sm:w-20 sm:h-11 md:w-52 md:h-11 lg:w-40 lg:h-16 2xl:w-28 2xl:h-12  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fa fa-server text-sm md:text-2xl"></i>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">CREATIVE Designing</h3>
@@ -235,8 +235,8 @@ export default function Home() {
 
             {/* Box 3 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fas fa-users"></i>
+              <div className="bg-white text-red-600 rounded-full w-20 h-8 sm:w-20 sm:h-11 md:w-52 md:h-14 lg:w-40 lg:h-20 2xl:w-28 2xl:h-14  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fas fa-users text-sm md:text-2xl"></i>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">CLIENT'S Happiness</h3>
@@ -248,8 +248,8 @@ export default function Home() {
 
             {/* Box 4 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fa fa-tasks"></i>
+              <div className="bg-white text-red-600 rounded-full w-20 h-8 sm:w-20 sm:h-12 md:w-48 md:h-14 lg:w-40 lg:h-20 2xl:w-28 2xl:h-16  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fa fa-tasks text-sm md:text-2xl"></i>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">FULL Maintenance</h3>
@@ -261,8 +261,8 @@ export default function Home() {
 
             {/* Box 5 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
-                <i className="fas fa-chalkboard-teacher"></i>
+              <div className="bg-white text-red-600 rounded-full w-20 h-9 sm:w-20 sm:h-14 md:w-40 md:h-14 lg:w-32 lg:h-20 2xl:w-24 2xl:h-16  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+                <i className="fas fa-chalkboard-teacher text-sm md:text-2xl"></i>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">PRACTICAL Training</h3>

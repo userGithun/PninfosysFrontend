@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useGetAllSlidersQuery } from "../../redux/features/sliders/sliderApi";
 import heroBanner from '/public/image/home/pnbanner.png';
+import { motion } from "framer-motion";
+import bnnerLogo from '/public/image/home/bannerLogo.png'
 
 export default function HeroSlider() {
     // const { data: slides = [], isLoading, isError } = useGetAllSlidersQuery();
@@ -38,7 +40,7 @@ export default function HeroSlider() {
     // const { title, subtitle, image } = slides[index];
 
     return (
-        <div className="relative w-full h-[500px] sm:h-[450px] md:h-[900px] overflow-hidden">
+        <div className="relative w-full h-[500px] sm:h-[605px] md:h-[819px] overflow-hidden">
             {/* Background Image */}
             <div className="">
                 <Image
@@ -55,13 +57,25 @@ export default function HeroSlider() {
 
             {/* Text Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
-                <h4 className="text-xs md:text-xl sm:text-sm text-blue-200 font-semibold tracking-wide uppercase mb-1">
+                <h4 className="text-xs md:text-xl sm:text-sm text-blue-200 font-semibold tracking-wide uppercase mb-1 pt-44">
                     WHAT ARE YOU WAITING FOR?
                 </h4>
-                <h1 className="text-3xl sm:text-3xl md:text-6xl font-bold text-white leading-snug">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-snug">
                     Our PN Infosys
                 </h1>
-                <p className="text-2xl md:text-7xl font-medium sm:text-lg text-white mt-2 mb-4">We're ready to help you grow!.</p>
+                <p className="text-2xl md:text-5xl sm:text-4xl lg:text-7xl font-medium text-white mt-2 mb-4">We're ready to help you grow!.</p>
+
+                {/* Right Side Image */}
+                <motion.div className="justify-center pt-6"
+                    animate={{ y: [0, -40, 0] }}
+                    transition={{ duration: 6, repeat: Infinity }}
+                >
+                    <img
+                        src={bnnerLogo.src}
+                        alt="services"
+                        className="w-32 h-20 md:w-96 md:h-56"
+                    />
+                </motion.div>
 
                 {/* <Link
                     href="/apply"
