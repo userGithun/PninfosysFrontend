@@ -23,16 +23,20 @@ export default function Home() {
       {/* BANNER End */}
 
       {/* Box Start */}
-      <section className='mt-14 mb-15 px-4 md:px-14'>
+      <section className='mt-14 mb-15 px-4 md:px-5'>
         <h2 className='text-2xl text-center text-gray-600 mb-7'>
           PN INFOSYS is a leading global business consulting and IT service company, Whether you need to run your business more efficiently or accelerate revenue growth, PN INFOSYS can get you there.
         </h2>
 
-        <div className='flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-6'>
-          {/* Card 1 */}
-          <div className='bg-white shadow-[#00000024] shadow-lg flex flex-col items-center rounded-xl group flex-grow md:flex-shrink-0 w-full sm:w-[45%] md:w-[300px]'>
-            <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] place-items-center w-34 h-31 mx-auto grid shadow-lg transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-blue-500'>
-              <img src={img1.src} className='w-full pt-3' alt='' />
+        <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-6 items-center'>
+          {/* 1 */}
+          <div className='bg-white shadow-[#00000024] shadow-lg w-[366px] rounded-xl mb-4 group'>
+            <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] place-items-center w-34 h-31 mx-auto grid shadow-lg transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-lg group-hover:shadow-blue-500'>
+              <img
+                src={img1.src}
+                className='w-full pt-3'
+                alt=''
+              />
             </div>
             <div>
               <h1 className='text-[27px] leading-7 font-medium pt-8 pb-6 text-center'>
@@ -44,25 +48,33 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 2 */}
-          <div className='bg-white shadow-[#00000024] shadow-md flex flex-col items-center rounded-xl group flex-grow md:flex-shrink-0 w-full sm:w-[45%] md:w-[300px]'>
-            <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] shadow-md place-items-center w-34 h-31 mx-auto grid transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-xl group-hover:shadow-blue-500'>
-              <img src={img2.src} className='w-full pt-3' alt='' />
+          {/* 2 */}
+          <div className='bg-white shadow-[#00000024] shadow-md w-[341px] rounded-xl mb-4 group'>
+            <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] shadow-md place-items-center w-34 h-31 mx-auto grid  transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-xl group-hover:shadow-blue-500'>
+              <img
+                src={img2.src}
+                className='w-full pt-3'
+                alt=''
+              />
             </div>
             <div>
               <h1 className='text-[27px] leading-7 font-medium pt-8 pb-6 text-center'>
                 Expert <br /> Thinking
               </h1>
               <p className='text-[#716f95] text-[17px] px-2 pb-15 text-center'>
-                We bring robust skill and forward-looking perspectives to solve customer challenges.
+                We brings robust skill and forward looking perspectives to solve customer challenges.
               </p>
             </div>
           </div>
 
-          {/* Card 3 */}
-          <div className='bg-white shadow-[#00000024] shadow-md flex flex-col items-center rounded-xl group flex-grow md:flex-shrink-0 w-full sm:w-[45%] md:w-[300px]'>
-            <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] shadow-md place-items-center w-34 h-31 mx-auto grid transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-xl group-hover:shadow-blue-500'>
-              <img src={img3.src} className='w-full pt-3' alt='' />
+          {/* 3 */}
+          <div className='bg-white shadow-[#00000024] shadow-md w-[341px] rounded-xl mb-4 group'>
+            <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] shadow-md place-items-center w-34 h-31 mx-auto grid  transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-xl group-hover:shadow-blue-500'>
+              <img
+                src={img3.src}
+                className='w-full pt-3'
+                alt=''
+              />
             </div>
             <div>
               <h1 className='text-[27px] leading-7 font-medium pt-8 pb-6 text-center'>
@@ -74,27 +86,27 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 4 */}
-          <div className='bg-white shadow-[#00000024] shadow-md flex flex-col items-center rounded-xl group flex-grow md:flex-shrink-0 w-full sm:w-[45%] md:w-[300px]'>
+          {/* 4 */}
+          <div className='bg-white shadow-[#00000024] shadow-md w-[341px] rounded-xl mb-4 group'>
             <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] shadow-md place-items-center w-34 h-31 mx-auto grid transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-xl group-hover:shadow-blue-500'>
-              <img src={img4.src} className='w-full pt-3' alt='' />
+              <img
+                src={img4.src}
+                className='w-full pt-3'
+                alt=''
+              />
             </div>
             <div>
               <h1 className='text-[27px] leading-7 font-medium pt-8 pb-6 text-center'>
                 Industrial <br /> Training
               </h1>
               <p className='text-[#716f95] text-[17px] px-2 pb-15 text-center'>
-                We provide free Industrial Internship to novice undergraduates. Basically our aim is to help students.
+                We provide free Industrial Internship to novice undergratuates. Basically our aim is to help students.
               </p>
             </div>
           </div>
         </div>
       </section>
       {/* Box End */}
-
-
-
-
 
 
       {/* Middle Start */}
