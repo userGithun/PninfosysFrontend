@@ -23,12 +23,12 @@ export default function Home() {
       {/* BANNER End */}
 
       {/* Box Start */}
-      <section className='mt-14 mb-15 px-4 md:px-5'>
+      <section className='mt-14 mb-15 px-4 md:px-15'>
         <h2 className='text-2xl text-center text-gray-600 mb-7'>
           PN INFOSYS is a leading global business consulting and IT service company, Whether you need to run your business more efficiently or accelerate revenue growth, PN INFOSYS can get you there.
         </h2>
 
-        <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-6 items-center'>
+        <div className='flex flex-col md:flex-row justify-center gap-6 items-center'>
           {/* 1 */}
           <div className='bg-white shadow-[#00000024] shadow-lg w-[366px] rounded-xl mb-4 group'>
             <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] place-items-center w-34 h-31 mx-auto grid shadow-lg transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-lg group-hover:shadow-blue-500'>
@@ -39,10 +39,10 @@ export default function Home() {
               />
             </div>
             <div>
-              <h1 className='text-[27px] leading-7 font-medium pt-8 pb-6 text-center'>
+              <h1 className='text-2xl leading-7 font-medium pt-8 pb-6 text-center'>
                 Collaborative <br /> Spirit
               </h1>
-              <p className='text-[#716f95] text-[17px] px-2 pb-15 text-center'>
+              <p className='text-[#716f95] text-md px-2 pb-15 text-center'>
                 We believe in developing true partnerships and making clients happy.
               </p>
             </div>
@@ -58,10 +58,10 @@ export default function Home() {
               />
             </div>
             <div>
-              <h1 className='text-[27px] leading-7 font-medium pt-8 pb-6 text-center'>
+              <h1 className='text-2xl leading-7 font-medium pt-8 pb-6 text-center'>
                 Expert <br /> Thinking
               </h1>
-              <p className='text-[#716f95] text-[17px] px-2 pb-15 text-center'>
+              <p className='text-[#716f95] text-md px-2 pb-15 text-center'>
                 We brings robust skill and forward looking perspectives to solve customer challenges.
               </p>
             </div>
@@ -77,10 +77,10 @@ export default function Home() {
               />
             </div>
             <div>
-              <h1 className='text-[27px] leading-7 font-medium pt-8 pb-6 text-center'>
+              <h1 className='text-2xl leading-7 font-medium pt-8 pb-6 text-center'>
                 Exorbitant Dedication
               </h1>
-              <p className='text-[#716f95] text-[17px] px-2 pb-15 text-center'>
+              <p className='text-[#716f95] text-md px-2 pb-15 text-center'>
                 PN Infosys is driven to meet client needs with determination and grit. We embrace tough challenges.
               </p>
             </div>
@@ -96,10 +96,10 @@ export default function Home() {
               />
             </div>
             <div>
-              <h1 className='text-[27px] leading-7 font-medium pt-8 pb-6 text-center'>
+              <h1 className='text-2xl leading-7 font-medium pt-8 pb-6 text-center'>
                 Industrial <br /> Training
               </h1>
-              <p className='text-[#716f95] text-[17px] px-2 pb-15 text-center'>
+              <p className='text-[#716f95] text-md px-2 pb-15 text-center'>
                 We provide free Industrial Internship to novice undergratuates. Basically our aim is to help students.
               </p>
             </div>
