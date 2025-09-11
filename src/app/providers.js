@@ -10,7 +10,7 @@ import { store, persistor } from '/redux/store';
 export default function ProvidersWrapper({ children }) {
   return (
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
+      <PersistGate loading={<p>Loading...</p>} persistor={persistor}>
         {children}
       </PersistGate>
     </Provider>

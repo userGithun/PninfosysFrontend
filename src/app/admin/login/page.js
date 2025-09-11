@@ -1,35 +1,54 @@
 "use client";
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Toaster, toast } from 'react-hot-toast'
-import { useForgetAdminPassMutation, useLoginAdminMutation } from '../../../../redux/features/adminAuth/adminAuthAPi'
+import { adminAuthApi, useForgetAdminPassMutation, useLoginAdminMutation } from '../../../../redux/features/adminAuth/adminAuthAPi'
 import { setAdmin } from '../../../../redux/features/adminAuth/adminAuthSlice'
+import { store } from '../../../../redux/store';
+
 
 export default function AdminLoginPage() {
     const [formData, setFormData] = useState({ email: '', password: '' })
     const [loginAdmin, { isLoading }] = useLoginAdminMutation()
     const dispatch = useDispatch()
     const router = useRouter()
+    const admin = useSelector(state => state.adminAuth.admin);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
+        e.preventDefault();
         try {
-            const res = await loginAdmin(formData).unwrap()
-            dispatch(setAdmin(res.user)) // ✅ only admin data
-            toast.success('Login successful!')
+            const res = await loginAdmin(formData).unwrap();
+
+            // ✅ Save admin data + token in Redux
+            dispatch(setAdmin({
+                ...res.user,
+                token: res.token // make sure your API is returning token
+            }));
+
+            store.dispatch(adminAuthApi.util.invalidateTags(['AdminAuth']));
+            // const admin = useSelector(state => state.adminAuth.admin);
+            console.log("Redux token:", admin?.token);
+            // console.log("Token to send:", adminState.admin?.token);
+
+            // ✅ Show success toast
+            toast.success("Login successful!");
+
+            // ✅ Navigate to dashboard after small delay
             setTimeout(() => {
-                router.push('/admin/dashboard')
-            }, 1000)
+                router.push("/admin/dashboard");
+            }, 500);
+
         } catch (err) {
-            console.error("Login failed:", err)
-            toast.error(err?.data?.message || 'Login failed')
+            console.error("Login failed:", err);
+            toast.error(err?.data?.message || "Login failed");
         }
-    }
+    };
+
 
     const [resetPassword] = useForgetAdminPassMutation();
 
