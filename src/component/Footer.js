@@ -9,7 +9,7 @@ const Footer = () => {
 
           {/* About */}
           <div>
-            <h1 className="text-6xl md:text-5xl font-bold mb-4">
+            <h1 className="text-6xl md:text-4xl lg:text-5xl font-bold mb-4">
               <span className="text-blue-300">PN</span><span className="text-black">INFO</span><span className="text-blue-400">SYS</span>
             </h1>
             <p className="text-sm text-justify">
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 border-t border-white/20 pt-4 text-center text-sm">
-          Copyright © 2025-2026 | PN INFOSYS IT COMPANY IN GWALIOR ! All rights reserved.
+             Copyright © {new Date().getFullYear()}-{new Date().getFullYear() + 1} | PN INFOSYS IT COMPANY IN GWALIOR ! All rights reserved.
         </div>
       </footer>
 

@@ -30,7 +30,7 @@ export default function Home() {
 
         <div className='flex flex-col md:flex-row justify-center gap-6 items-center'>
           {/* 1 */}
-          <div className='bg-white shadow-[#00000024] shadow-lg w-[366px] rounded-xl mb-4 group'>
+          <div className='bg-white shadow-[#00000024] shadow-lg w-[341px] rounded-xl mb-4 group'>
             <div className='py-2 px-6 mt-8 rounded-[60px] shadow-[#00000024] place-items-center w-34 h-31 mx-auto grid shadow-lg transition-all duration-600 group-hover:-translate-y-2 ease-in-out group-hover:shadow-lg group-hover:shadow-blue-500'>
               <img
                 src={img1.src}
@@ -110,12 +110,12 @@ export default function Home() {
 
 
       {/* Middle Start */}
-      <section className="bg-[#009df2] text-white py-12 px-4 mb-10">
+      <section className="bg-[#009df2] text-white py-12 px-9 mb-10">
         <div className="container mx-auto flex flex-col md:flex-row items-center pt-14 pb-14 gap-10 md:w-[73%] mb-10">
 
           {/* Left Side */}
           <div className="flex-1 space-y-6">
-            <p className="text-3xl md:text-4xl font-bold text-white pb-12 leading-[1.4]">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white pb-10 md:pb-12 leading-[1.4]">
               Learning environment, Free <br /> Internship to novice students.
             </p>
             {/* Box 1 */}
@@ -209,7 +209,7 @@ export default function Home() {
 
             {/* Box 1 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-24 h-8 sm:w-20 sm:h-11 md:w-48 md:h-12 lg:w-40 lg:h-20 2xl:w-24 2xl:h-12  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+              <div className="bg-white text-red-600 rounded-full w-24 h-8 sm:w-20 sm:h-11 md:w-48 md:h-12 lg:w-40 lg:h-14 2xl:w-24 2xl:h-12  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
                 <i className="fas fa-lightbulb text-sm md:text-2xl"></i>
               </div>
               <div>
@@ -222,7 +222,7 @@ export default function Home() {
 
             {/* Box 2 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-24 h-8 sm:w-20 sm:h-11 md:w-52 md:h-11 lg:w-40 lg:h-16 2xl:w-28 2xl:h-12  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+              <div className="bg-white text-red-600 rounded-full w-24 h-8 sm:w-20 sm:h-11 md:w-52 md:h-11 lg:w-40 lg:h-12 2xl:w-28 2xl:h-12  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
                 <i className="fa fa-server text-sm md:text-2xl"></i>
               </div>
               <div>
@@ -235,7 +235,7 @@ export default function Home() {
 
             {/* Box 3 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-20 h-8 sm:w-20 sm:h-11 md:w-52 md:h-14 lg:w-40 lg:h-20 2xl:w-28 2xl:h-14  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+              <div className="bg-white text-red-600 rounded-full w-20 h-8 sm:w-20 sm:h-11 md:w-52 md:h-14 lg:w-40 lg:h-14 2xl:w-28 2xl:h-14  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
                 <i className="fas fa-users text-sm md:text-2xl"></i>
               </div>
               <div>
@@ -248,7 +248,7 @@ export default function Home() {
 
             {/* Box 4 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-20 h-8 sm:w-20 sm:h-12 md:w-48 md:h-14 lg:w-40 lg:h-20 2xl:w-28 2xl:h-16  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+              <div className="bg-white text-red-600 rounded-full w-20 h-8 sm:w-20 sm:h-12 md:w-48 md:h-14 lg:w-40 lg:h-14 2xl:w-28 2xl:h-16  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
                 <i className="fa fa-tasks text-sm md:text-2xl"></i>
               </div>
               <div>
@@ -261,7 +261,7 @@ export default function Home() {
 
             {/* Box 5 */}
             <div className="flex items-start gap-4">
-              <div className="bg-white text-red-600 rounded-full w-20 h-9 sm:w-20 sm:h-14 md:w-40 md:h-14 lg:w-32 lg:h-20 2xl:w-24 2xl:h-16  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
+              <div className="bg-white text-red-600 rounded-full w-20 h-9 sm:w-20 sm:h-14 md:w-40 md:h-14 lg:w-32 lg:h-14 2xl:w-24 2xl:h-16  flex items-center justify-center text-xl sm:text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-white">
                 <i className="fas fa-chalkboard-teacher text-sm md:text-2xl"></i>
               </div>
               <div>
@@ -275,7 +275,7 @@ export default function Home() {
           </div>
 
           {/* Right Side Image */}
-          <motion.div className="flex-1 flex justify-center mt-10 md:mt-0"
+          <motion.div className="flex-1 flex justify-center mt-10 md:mt-56 lg:mt-8"
             animate={{ y: [0, -20, 0] }}
             transition={{ duration: 3, repeat: Infinity }}
           >

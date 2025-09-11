@@ -11,23 +11,23 @@ export default function TechnoHome() {
     );
 
     return (
-        <section className="py-16">
+        <section className="py-16 px-6">
             <div className="max-w-7xl mx-auto sm:px-6 md:px-12 lg:px-56 xl:px-32 2xl:px-20">
                 {/* Heading + Filters */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-6">
                     <div>
-                        <h2 className="text-3xl font-bold text-gray-800">
+                        <h2 className="md:text-3xl text-2xl font-bold text-gray-800">
                             Technologies <br />
-                            <span className="text-5xl text-sky-500">We work on..</span>
+                            <span className="text-4xl md:text-5xl text-sky-500">We work on..</span>
                         </h2>
                     </div>
 
-                    <div className="flex flex-wrap gap-3 text-sm font-medium text-gray-600">
+                    <div className="flex flex-wrap gap-1 md:gap-3 text-sm font-medium text-gray-600">
                         {['all', 'design', 'development'].map((type) => (
                             <button
                                 key={type}
                                 onClick={() => setFilter(type)}
-                                className={`cursor-pointer px-4 py-2 border rounded-full hover:border-sky-400 transition duration-300 ${filter === type ? 'text-white bg-sky-500 border-sky-500' : 'bg-white'
+                                className={`cursor-pointer px-3 py-2 border rounded-full hover:border-sky-400 transition duration-300 ${filter === type ? 'text-white bg-sky-500 border-sky-500' : 'bg-white'
                                     }`}
                             >
                                 {type === 'all'

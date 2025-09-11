@@ -23,11 +23,13 @@ function Header() {
       <div className="mx-auto px-4 md:px-10 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <img
-            src={PnLogo.src}
-            alt="PN INFOSYS"
-            className="w-[64%] md:w-[74%]"
-          />
+          <Link href='/'>
+            <img
+              src={PnLogo.src}
+              alt="PN INFOSYS"
+              className="w-[64%] md:w-[74%]"
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
@@ -142,15 +144,15 @@ function Header() {
             {openDropdown === 'WORKSHOP' && (
               <div className="space-y-1 mt-1 transition-all duration-300 ease-in-out">
                 {workshop.slice().reverse().map((item) => (
-                    <Link
-                      key={item._id}
-                      href={`/workshop/${item.slug}`}
-                      className="block"
-                      onClick={closeMenu}
-                    >
-                      {item.collegename}
-                    </Link>
-                  ))}
+                  <Link
+                    key={item._id}
+                    href={`/workshop/${item.slug}`}
+                    className="block"
+                    onClick={closeMenu}
+                  >
+                    {item.collegename}
+                  </Link>
+                ))}
               </div>
             )}
 

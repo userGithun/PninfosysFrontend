@@ -28,7 +28,7 @@ export const adminAuthApi = createApi({
 
         //Get Admin Profile
         getAdminProfile: builder.query({
-            query: () => '/profile',
+            query: () => '/admin/dashboard',
             providesTags: ['AdminAuth']
         }),
         //Logout

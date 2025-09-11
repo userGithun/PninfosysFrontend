@@ -84,6 +84,7 @@ export default function AdminLoginPage() {
                         onChange={handleChange}
                         className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required
+                        autoComplete="username"
                     />
                     <input
                         name="password"
@@ -93,6 +94,7 @@ export default function AdminLoginPage() {
                         onChange={handleChange}
                         className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required
+                        autoComplete="current-password"
                     />
                     <div className="w-full flex justify-end">
                         <button

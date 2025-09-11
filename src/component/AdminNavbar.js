@@ -2,19 +2,31 @@ import React from "react"
 import { LogOut, User } from "lucide-react"
 import { useLogoutAdminMutation } from "../../redux/features/adminAuth/adminAuthAPi"
 import { useRouter } from "next/navigation"
-
+import { useDispatch } from "react-redux"
+import { setAdmin } from "../../redux/features/adminAuth/adminAuthSlice"
+import { persistor } from "../../redux/store" // make sure correct path
+import { toast } from "react-toastify"
 
 function AdminNavbar() {
 
   const [Adminlogout] = useLogoutAdminMutation()
   const navigate = useRouter()
+  const dispatch = useDispatch()
 
   const handleLogout = async () => {
     try {
-      await Adminlogout().unwrap()
-      navigate('/admin/login')
+      await Adminlogout().unwrap()       // server logout
+      dispatch(setAdmin(null))           // Redux state clear
+      await persistor.flush()            // Persist store sync
+      await persistor.purge()            // Store clean
+
+      toast.success("Logout Successful")
+
+      // Force client-side navigation
+      window.location.href = "/"  // safer than router.navigate in this case
     } catch (error) {
-      console.log('Logout err', error)
+      console.log("Logout err", error)
+      toast.error("Logout Failed")
     }
   }
 

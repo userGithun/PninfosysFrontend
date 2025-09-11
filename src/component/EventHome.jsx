@@ -8,7 +8,7 @@ export default function EventHome() {
         <>
             {/* EventHome Start*/}
             <section>
-                <div className="bg-white py-10 px-4 sm:px-6 lg:px-56 xl:px-40 2xl:px-60">
+                <div className="bg-white mx-auto max-w-7xl py-10 px-6 sm:px-6 md:px-12 lg:px-56 xl:px-32 2xl:px-20">
                     <h2 className="text-3xl font-bold text-gray-700">News</h2>
                     <h3 className="text-5xl font-bold text-[#009df2] mb-10">Events</h3>
 

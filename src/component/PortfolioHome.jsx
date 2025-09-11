@@ -7,9 +7,9 @@ export default function PortfolioHome() {
     const { data: portfolio = [], isLoading } = useGetAllPortfolioQuery()
 
     return (
-        <div>
-            <section className='px-4 sm:px-6 md:px-12 lg:px-56 xl:px-32 2xl:px-60 mb-20 mt-12'>
-                <div className="py-12">
+        <>
+            <section className="mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-56 xl:px-32 2xl:px-20">
+                <div className="py-12 px-6">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mb-8 sm:mb-10">
                         Our <br />
                         <span className="text-sky-500 text-4xl sm:text-5xl">Portfolio</span>
@@ -18,12 +18,10 @@ export default function PortfolioHome() {
                     {/* Grid Start */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-                        {/* 🔹 LOADING SKELETON (jab tak data fetch ho raha h) */}
+                        {/* 🔹 LOADING SKELETON */}
                         {isLoading && Array.from({ length: portfolio.length || 6 }).map((_, index) => (
                             <div key={index} className="relative w-full overflow-hidden rounded-xl shadow-lg">
-                                {/* Image Placeholder */}
                                 <div className="w-full h-56 sm:h-60 md:h-64 bg-gray-200 animate-pulse" />
-                                {/* Text Placeholder */}
                                 <div className="absolute bottom-4 left-4 right-4">
                                     <div className="h-4 bg-gray-300 rounded w-3/4 mb-2 animate-pulse" />
                                     <div className="h-3 bg-gray-300 rounded w-1/2 animate-pulse" />
@@ -31,29 +29,29 @@ export default function PortfolioHome() {
                             </div>
                         ))}
 
-                        {/* 🔹 DATA CARDS (jab data aa jaye tab show hoga) */}
+                        {/* 🔹 DATA CARDS */}
                         {!isLoading && portfolio.slice().reverse().map((item, index) => (
-                            <div
-                                key={index}
-                                className="relative w-full overflow-hidden rounded-xl shadow-lg group"
-                            >
-                                {/* Image */}
+                            <div key={index} className="relative w-full overflow-hidden rounded-xl shadow-lg group" tabIndex={0}>
                                 <img
                                     src={item.image.url}
                                     alt={item.name}
-                                    className="w-full h-56 sm:h-60 md:h-64 object-cover"
+                                    className="w-full h-58 sm:h-96 md:h-35 lg:h-64 object-cover"
                                 />
 
-                                {/* Hover Overlay */}
                                 <div className="absolute inset-0 bg-sky-500 bg-opacity-0 
-                                    group-hover:bg-opacity-90 transition-all duration-500 ease-in-out 
+                                    group-hover:bg-opacity-90
+                                    focus-within:bg-opacity-90
+                                    transition-all duration-500 ease-in-out 
                                     flex items-center justify-center translate-y-full 
-                                    group-hover:translate-y-0 opacity-80 hover:opacity-100">
+                                    group-hover:translate-y-0
+                                    focus-within:translate-y-0
+                                    opacity-95">
 
                                     <div className="text-center text-white opacity-0 
-                                        group-hover:opacity-100 transition-opacity duration-300">
+                                        group-hover:opacity-100
+                                        focus-within:opacity-100
+                                        transition-opacity duration-300">
 
-                                        {/* Action Buttons */}
                                         <div className="flex gap-3 justify-center">
                                             <Link href="#">
                                                 <div className="bg-white text-sky-500 w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center transition-all duration-500 ease-in-out hover:bg-sky-500 hover:text-white hover:shadow-md hover:shadow-white">
@@ -68,7 +66,6 @@ export default function PortfolioHome() {
                                             </Link>
                                         </div>
 
-                                        {/* Title & Subtitle */}
                                         <h3 className="text-lg sm:text-xl font-bold pt-4">{item.name}</h3>
                                         <p className="text-sm font-medium sm:text-sm">{item.subtitle}</p>
                                     </div>
@@ -79,6 +76,6 @@ export default function PortfolioHome() {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     )
 }
