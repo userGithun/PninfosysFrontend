@@ -3,8 +3,15 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const adminAuthApi = createApi({
     reducerPath: 'adminAuthApi',
     baseQuery: fetchBaseQuery({
-        baseUrl:process.env.NEXT_PUBLIC_API_URL_LIVE,
-        credentials: 'include'
+        baseUrl: process.env.NEXT_PUBLIC_API_URL_LIVE,
+        credentials: 'include',
+        prepareHeaders: (headers, { getState }) => {
+            const token = getState().adminAuth.admin?.token; // Redux state se token le lo
+            if (token) {
+                headers.set("Authorization", `Bearer ${token}`);
+            }
+            return headers;
+        },
     }),
     tagTypes: ['AdminAuth'],
     endpoints: (builder) => ({
@@ -40,13 +47,13 @@ export const adminAuthApi = createApi({
             invalidatesTags: ['AdminAuth']
         }),
         forgetAdminPass: builder.mutation({
-            query:(data) =>({
-                url:'/forget-password',
-                method:'POST',
-                body:data,
+            query: (data) => ({
+                url: '/forget-password',
+                method: 'POST',
+                body: data,
             })
         })
     })
 })
 
-export const { useRegisterAdminMutation, useLoginAdminMutation, useGetAdminProfileQuery, useLogoutAdminMutation,useForgetAdminPassMutation } = adminAuthApi
+export const { useRegisterAdminMutation, useLoginAdminMutation, useGetAdminProfileQuery, useLogoutAdminMutation, useForgetAdminPassMutation } = adminAuthApi
