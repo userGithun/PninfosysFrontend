@@ -253,7 +253,7 @@ max-h-[90vh] overflow-y-auto"
                                     className="border-[#0000003b] w-full px-4 py-2 border rounded-lg text-black focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
                                     required
                                 >
-                                    <option value="" selected disabled>Select Qualification</option>
+                                    <option value="" disabled hidden>Select Qualification</option>
                                     <option value="BTECH">B.TECH</option>
                                     <option value="BCA">BCA</option>
                                     <option value="MCA">MCA</option>
@@ -302,7 +302,7 @@ max-h-[90vh] overflow-y-auto"
                                     className="border-[#0000003b] w-full px-4 py-2 border rounded-lg text-black focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
                                     required
                                 >
-                                    <option value="" selected disabled>Select Branch</option>
+                                    <option value="" disabled hidden >Select Branch</option>
                                     <option value="CSE">CS</option>
                                     <option value="IT">IT</option>
                                     <option value="ECE">EE</option>
@@ -326,7 +326,7 @@ max-h-[90vh] overflow-y-auto"
                                     className="border-[#0000003b] w-full px-4 py-2 border rounded-lg text-black focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
                                     required
                                 >
-                                    <option value="" selected disabled>Select Semester</option>
+                                    <option value="" disabled hidden >Select Semester</option>
                                     <option value="1st">1st Semester</option>
                                     <option value="2nd">2nd Semester</option>
                                     <option value="3rd">3rd Semester</option>
