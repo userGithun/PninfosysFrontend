@@ -1,6 +1,25 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // localStorage
+import createWebStorage from "redux-persist/lib/storage/createWebStorage";
+const createNoopStorage = () => {
+  return {
+    getItem() {
+      return Promise.resolve(null);
+    },
+    setItem(_key, value) {
+      return Promise.resolve(value);
+    },
+    removeItem() {
+      return Promise.resolve();
+    },
+  };
+};
+const storage =
+  typeof windows !== "undefined"
+    ? createWebStorage("local")
+    : createNoopStorage();
+
+// import storage from 'redux-persist/lib/storage'; // localStorage
 import { adminAuthApi } from '../redux/features/adminAuth/adminAuthAPi';
 import adminAuthReducer from '../redux/features/adminAuth/adminAuthSlice';
 import { sliderApi } from '../redux/features/sliders/sliderApi';
