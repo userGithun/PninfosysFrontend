@@ -53,7 +53,7 @@ export default function CourseModal({
                         />
                     </div>
                     <div>
-                        <label className="block text-gray-700 mb-1">Date (Start from)</label>
+                        <label className="block text-gray-700 mb-1">Date (Start From)</label>
                         <input
                             type="date"
                             name="date"
