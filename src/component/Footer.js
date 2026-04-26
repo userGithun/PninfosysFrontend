@@ -4,6 +4,13 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
+      <Link
+        href="https://wa.me/917000846823?text=Hello%2C%20I%20visited%20your%20website%20and%20I%E2%80%99m%20interested%20in%20your%20IT%20training%20programs%20with%20job%20assistance.%20Kindly%20share%20complete%20details%20about%20courses%2C%20fees%2C%20and%20enrollment%20process."
+        target='_blank'
+        alt="Whatsapp"
+        className='bg-green-500 text-white w-16 h-16 pl-2.5 p-3 rounded-full text-4xl hover:bg-green-600 fixed right-4 bottom-20 cursor-pointer'>
+        <i className="fab fa-whatsapp"></i>
+      </Link>
       <footer className="bg-[#3a82b9] text-white px-4 md:px-16 py-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
@@ -46,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 border-t border-white/20 pt-4 text-center text-sm">
-             Copyright © {new Date().getFullYear()}-{new Date().getFullYear() + 1} | PN INFOSYS IT COMPANY IN GWALIOR ! All rights reserved.
+          Copyright © {new Date().getFullYear()}-{new Date().getFullYear() + 1} | PN INFOSYS IT COMPANY IN GWALIOR ! All rights reserved.
         </div>
       </footer>
 
