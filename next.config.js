@@ -1,15 +1,16 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//     reactStrictMode: true,
-//     // output: 'export',   // static export enable karo
-// }
-
-// module.exports = nextConfig
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    reactStrictMode: true,
     images: {
-        domains: ['res.cloudinary.com'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'res.cloudinary.com',
+                pathname: '**',
+            },
+        ],
     },
 }
-export default nextConfig
+
+// "module.exports" ki jagah "export default" use karein
+export default nextConfig;
