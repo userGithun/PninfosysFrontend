@@ -4,12 +4,12 @@ import HeroSlider from "@/component/HeroSlider";
 import TechnoHome from "@/component/TechnoHome";
 import PortfolioHome from "@/component/PortfolioHome";
 import EventHome from "@/component/EventHome";
-import img1 from '/public/image/home/box1.jpg';
-import img2 from '/public/image/home/box2.png';
-import img3 from '/public/image/home/box3.jpg';
-import img4 from '/public/image/home/box4.png';
-import img5 from '/public/image/home/box5.png';
-import img6 from '/public/image/home/box6.png';
+import img1 from '../../public/image/home/box1.jpg';
+import img2 from '../../public/image/home/box2.png';
+import img3 from '../../public/image/home/box3.jpg';
+import img4 from '../../public/image/home/box4.png';
+import img5 from '../../public/image/home/box5.png';
+import img6 from '../../public/image/home/box6.png';
 
 
 export default function Home() {

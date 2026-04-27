@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { useGetAllCollegeQuery } from '../../redux/features/workshop/workshopApi';
-import PnLogo from '/public/image/pninfosysLogo.png'
+import PnLogo from '../../public/image/pninfosysLogo.png'
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
