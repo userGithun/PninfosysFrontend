@@ -3,9 +3,9 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useGetAllSlidersQuery } from "../../redux/features/sliders/sliderApi";
-import heroBanner from '/public/image/home/pnbanner.png';
+import heroBanner from '../../public/image/home/pnbanner.png';
 import { motion } from "framer-motion";
-import bnnerLogo from '/public/image/home/bannerLogo.png'
+import bnnerLogo from '../../public/image/home/bannerLogo.png';
 
 export default function HeroSlider() {
     // const { data: slides = [], isLoading, isError } = useGetAllSlidersQuery();
