@@ -3,12 +3,13 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
-import { useGetAdminProfileQuery } from '/redux/features/adminAuth/adminAuthAPi';
+import { useGetAdminProfileQuery } from "../../../../../redux/features/adminAuth/adminAuthAPi";
+
 
 export default function AdminDashboardPage() {
     const admin = useSelector(state => state.adminAuth.admin);
     const { data, isLoading } = useGetAdminProfileQuery(undefined, {
-        skip: !admin?.token // ❌ Skip query agar token nahi hai
+        skip: !admin?.token //  Skip query agar token nahi hai
     });
     const router = useRouter();
 

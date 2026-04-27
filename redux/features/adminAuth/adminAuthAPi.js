@@ -37,7 +37,7 @@ export const adminAuthApi = createApi({
         getAdminProfile: builder.query({
             query: () => '/admin/dashboard',
             providesTags: ['AdminAuth'],
-            // ✅ Force refetch when component mounts or args change
+            // Force refetch when component mounts or args change
             refetchOnMountOrArgChange: true
         }),
         //Logout
