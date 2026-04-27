@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
-import box1 from '/public/image/service/box1.jpg'
-import box2 from '/public/image/service/box2.jpg'
-import box3 from '/public/image/service/box3.jpg'
-import Pnservice from '/public/image/service/pnservice.png'
+import box1 from '../../../public/image/service/box1.jpg'
+import box2 from '../../../public/image/service/box2.jpg'
+import box3 from '../../../public/image/service/box3.jpg'
+import Pnservice from '../../../public/image/service/pnservice.png'
 import { motion } from 'framer-motion'
 import Banner from '@/component/Banner';
 

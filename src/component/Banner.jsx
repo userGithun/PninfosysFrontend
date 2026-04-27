@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import bannerImage from '/public/image/BannerBackground.png'; // imported as an object
+import bannerImage from '../../public/image/BannerBackground.png'; // imported as an object
 
 function Banner({ title, breadcrumb }) {
   return (

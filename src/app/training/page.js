@@ -4,13 +4,13 @@ import { motion } from 'framer-motion'
 import Image from "next/image";
 import Banner from '@/component/Banner';
 
-import img1 from '/public/image/training/box1.webp';
-import img2 from '/public/image/training/box2.webp';
-import img3 from '/public/image/training/box3.webp';
-import img4 from '/public/image/training/box4.png';
-import img5 from '/public/image/training/box5.png';
-import img6 from '/public/image/home/box6.png';
-import img7 from '/public/image/training/box7.png';
+import img1 from '../../../public/image/training/box1.webp';
+import img2 from '../../../public/image/training/box2.webp';
+import img3 from '../../../public/image/training/box3.webp';
+import img4 from '../../../public/image/training/box4.png';
+import img5 from '../../../public/image/training/box5.png';
+import img6 from '../../../public/image/home/box6.png';
+import img7 from '../../../public/image/training/box7.png';
 
 
 export default function training() {
