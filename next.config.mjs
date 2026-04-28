@@ -8,6 +8,11 @@ const nextConfig = {
                 hostname: 'res.cloudinary.com',
                 pathname: '**',
             },
+            {
+                protocol: 'http', // Ye line add karni hai
+                hostname: 'res.cloudinary.com',
+                pathname: '**',
+            },
         ],
     },
 }
